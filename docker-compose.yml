@@ -23,5 +23,6 @@ services:
       - DB_PASSWORD=123456
     volumes:
       - './laravel:/app'
+    command: sh -c "composer install"
     depends_on:
       - mariadb
